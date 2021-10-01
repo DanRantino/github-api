@@ -1,0 +1,10 @@
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom';
+import Providers from './providers';
+
+ReactDOM.render(
+    <StrictMode>
+        <Providers />
+    </StrictMode>,
+    document.getElementById('root')
+);

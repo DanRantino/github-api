@@ -1,0 +1,65 @@
+{
+  "defaultSeverity": "warning",
+  "extends": "./.prettierrc",
+  "jsRules": {},
+  "rules": {
+    "whitespace": [
+      true,
+      "check-module"
+    ],
+    "no-implicit-dependencies": false,
+    "jsx-boolean-value": [
+      "always",
+      {
+        "never": [
+          "exact"
+        ]
+      }
+    ],
+    "jsx-no-lambda": [
+      "always",
+      {
+        "never": [
+          "onClick"
+        ]
+      }
+    ],
+    "object-literal-sort-keys": false,
+    "prettier": [
+      true,
+      "./prettierrc"
+    ],
+    "no-shadowed-variable": false,
+    "interface-name": false,
+    "member-access": [
+      false
+    ]
+  },
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": [
+    "src"
+  ]
+}
