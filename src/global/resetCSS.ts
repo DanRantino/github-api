@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 type props = {
-    color: boolean;
+    color: boolean | undefined;
 };
 
 export const ResetCSS = createGlobalStyle<props>`
@@ -163,7 +163,6 @@ export const ResetCSS = createGlobalStyle<props>`
 
   abbr[title] {
     text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
   }
 
   /**
@@ -261,12 +260,10 @@ export const ResetCSS = createGlobalStyle<props>`
 
   [type='checkbox'] {
     -webkit-appearance: checkbox;
-    appearance: checkbox;
   }
 
   [type='radio'] {
     -webkit-appearance: radio;
-    appearance: radio;
   }
 
   /**

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.main`
-    overflow: auto;
+  overflow: auto;
+  padding-right: 5%;
 `;
